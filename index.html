@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class Rectangle</title>
+</head>
+<body>
+<h1  style="color:red;font-size:46px;"> To check Rectangle area and perimeter go to console<h1>
+	<script>
+class Rectangle {
+  constructor(length, breadth) {
+    this.length = length;
+    this.breadth = breadth;
+  }
+
+  displayArea() {
+    let area = this.length * this.breadth;
+    console.log(`Length: ${this.length}, Breadth: ${this.breadth}, Area: ${area}`); 
+  }
+  
+   displayPerimeter() {
+    let peri = 2 * (this.length + this.breadth);
+    console.log(`Length: ${this.length}, Breadth: ${this.breadth}, perimeter: ${peri}`); 
+  }
+}
+
+const value1 = new Rectangle(16, 10);
+const value2 = new Rectangle(6, 73);
+
+value1.displayArea(); 
+value2.displayArea(); 
+value1.displayPerimeter();
+value2.displayPerimeter();
+	</script>
+</body>
+</html>
